@@ -1,5 +1,6 @@
 variable "username" {
-  username= "redinger"
+  type = string
+  default = redinger
 }
 
 provider "random" { # an empty for destroying old resources
