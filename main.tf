@@ -1,4 +1,5 @@
 variable "username" {
+  redinger
 }
 
 provider "random" { # an empty for destroying old resources
