@@ -1,5 +1,5 @@
 variable "username" {
-  redinger
+  username=redinger
 }
 
 provider "random" { # an empty for destroying old resources
