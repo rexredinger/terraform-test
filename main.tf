@@ -1,10 +1,10 @@
 # Create a resource group if it doesn’t exist
 resource "azurerm_resource_group" "myterraformgroup" {
-    name     = "jwolferTFE"
+    name     = "alexr"
     location = "eastus"
 
     tags = {
-        environment = "jwolfer tfe demo"
+        environment = "alexr tfe demo"
     }
 }
 
@@ -16,7 +16,7 @@ resource "azurerm_virtual_network" "myterraformnetwork" {
     resource_group_name = azurerm_resource_group.myterraformgroup.name
 
     tags = {
-        environment = "jwolfer tfe demo"
+        environment = "alexr tfe demo"
     }
 }
 
@@ -36,7 +36,7 @@ resource "azurerm_public_ip" "myterraformpublicip" {
     allocation_method            = "Dynamic"
 
     tags = {
-        environment = "jwolfer tfe demo"
+        environment = "alexr tfe demo"
     }
 }
 
@@ -59,7 +59,7 @@ resource "azurerm_network_security_group" "myterraformnsg" {
     }
 
     tags = {
-        environment = "jwolfer tfe demo"
+        environment = "alexr tfe demo"
     }
 }
 
@@ -78,7 +78,7 @@ resource "azurerm_network_interface" "myterraformnic" {
     }
 
     tags = {
-        environment = "jwolfer tfe demo"
+        environment = "alexr tfe demo"
     }
 }
 
@@ -101,7 +101,7 @@ resource "azurerm_storage_account" "mystorageaccount" {
     account_replication_type    = "LRS"
 
     tags = {
-        environment = "jwolfer tfe demo"
+        environment = "alexr tfe demo"
     }
 }
 
@@ -146,6 +146,6 @@ resource "azurerm_virtual_machine" "myterraformvm" {
     }
 
     tags = {
-        environment = "jwolfer tfe demo"
+        environment = "alexr tfe demo"
     }
 }
