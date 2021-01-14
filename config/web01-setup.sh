@@ -8,7 +8,7 @@ apt install -y nginx > /dev/null 2>&1
 cat << EOF > /var/www/html/index.nginx-debian.html
 <html>
   <head><title>Wolfer Terraform Demo!</title></head>
-  Hello from Web01!
+  Hello from Web01! WOOP WOOP
   </body>
 </html>
 EOF
