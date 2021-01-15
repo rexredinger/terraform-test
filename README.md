@@ -7,3 +7,4 @@ blap
 blarg
 blorg
 DIS IS IT
+decode deez bits
