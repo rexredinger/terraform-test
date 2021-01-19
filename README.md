@@ -1,5 +1,7 @@
 # terraform-test
 
+:dog:
+
 ## Unicode
 
 This page contains characters from each of the Unicode character blocks.
