@@ -1,5 +1,5 @@
 resource "random_pet" "pet" {
-  prefix = "{"
+  prefix = "{}"
 }
 output "fail" {
   value = jsondecode(random_pet.pet.id)
