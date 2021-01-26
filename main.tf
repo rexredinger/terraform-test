@@ -1,6 +1,10 @@
-resource "random_pet" "pet" {
-  prefix = "{}"
+resource "random_id" "random" {
+  keepers = {
+    uuid = "${uuid()}"
+  }
+  byte_length = 8
 }
-output "fail" {
-  value = jsondecode(random_pet.pet.id)
+
+output "random" {
+  value = "${random_id.random.hex}"
 }
